@@ -1094,9 +1094,9 @@ var styled_components_es = __webpack_require__("VEsJ");
 });
 // CONCATENATED MODULE: ./index.js
 var _templateObject = _taggedTemplateLiteralLoose(['\n  body, html {\n\tfont-family: monospace;\n\tmargin: 0;\n\tpadding: 0;\n\tbackground: ', ';\n\tcolor: ', ';\n\n\twidth: 100%;\n\theight: 100%;\n  }\n'], ['\n  body, html {\n\tfont-family: monospace;\n\tmargin: 0;\n\tpadding: 0;\n\tbackground: ', ';\n\tcolor: ', ';\n\n\twidth: 100%;\n\theight: 100%;\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteralLoose(['\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n'], ['\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n']),
-    _templateObject3 = _taggedTemplateLiteralLoose(['\n\twidth: 100%;\n\tmax-width: 32rem;\n\tpadding: 1rem;\n'], ['\n\twidth: 100%;\n\tmax-width: 32rem;\n\tpadding: 1rem;\n']),
-    _templateObject4 = _taggedTemplateLiteralLoose(['\n\tfont-size: 2rem;\n\tmargin: 0;\n\tfont-weight: normal;\n\tline-height: 1.75;\n'], ['\n\tfont-size: 2rem;\n\tmargin: 0;\n\tfont-weight: normal;\n\tline-height: 1.75;\n']),
+    _templateObject2 = _taggedTemplateLiteralLoose(['\n\tdisplay: flex;\n\tflex-direction: column;\n\n\t@media (min-width: 700px) {\n\t\talign-items: center;\n\t}\n'], ['\n\tdisplay: flex;\n\tflex-direction: column;\n\n\t@media (min-width: 700px) {\n\t\talign-items: center;\n\t}\n']),
+    _templateObject3 = _taggedTemplateLiteralLoose(['\n\tmax-width: 32rem;\n\tpadding: 1rem;\n'], ['\n\tmax-width: 32rem;\n\tpadding: 1rem;\n']),
+    _templateObject4 = _taggedTemplateLiteralLoose(['\n\tfont-size: 2rem;\n\tmargin: 0;\n\tpadding: 0;\n\tfont-weight: normal;\n\tline-height: 1.75;\n'], ['\n\tfont-size: 2rem;\n\tmargin: 0;\n\tpadding: 0;\n\tfont-weight: normal;\n\tline-height: 1.75;\n']),
     _templateObject5 = _taggedTemplateLiteralLoose(['\n\tcolor: ', ';\n\tfont-size: 2rem;\n\tline-height: 1.75;\n'], ['\n\tcolor: ', ';\n\tfont-size: 2rem;\n\tline-height: 1.75;\n']);
 
 
@@ -1130,13 +1130,17 @@ var Link = styled_components_es["a" /* default */].a(_templateObject5, colors.fo
 		null,
 		Object(preact_min["h"])(Title, { children: 'I am Lawrence.' }),
 		Object(preact_min["h"])(SubTitle, { children: 'Software + Engineering.' }),
-		Object(preact_min["h"])(Link, { href: 'https://github.com/lwakefield', children: 'GitHub' }),
-		',\xA0',
-		Object(preact_min["h"])(Link, { href: 'https://www.linkedin.com/in/lawrencewak/', children: 'Linkedin' }),
-		',\xA0',
-		Object(preact_min["h"])(Link, { href: 'https://twitter.com/lawrenceewak', children: 'Twitter' }),
-		',\xA0',
-		Object(preact_min["h"])(Link, { href: 'mailto:lawrence@iamlawrence.me', children: 'Email' })
+		Object(preact_min["h"])(
+			'p',
+			null,
+			Object(preact_min["h"])(Link, { href: 'https://github.com/lwakefield', children: 'GitHub' }),
+			', ',
+			Object(preact_min["h"])(Link, { href: 'https://www.linkedin.com/in/lawrencewak/', children: 'Linkedin' }),
+			', ',
+			Object(preact_min["h"])(Link, { href: 'https://twitter.com/lawrenceewak', children: 'Twitter' }),
+			', ',
+			Object(preact_min["h"])(Link, { href: 'mailto:lawrence@iamlawrence.me', children: 'Email' })
+		)
 	)
 );
 
