@@ -8,7 +8,8 @@
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "deploy": "npm run build; gh-pages --dist build --branch master"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -23,6 +24,7 @@
     "preact-cli": "^2.0.0"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "styled-components": "^3.2.3"
