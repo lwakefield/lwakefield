@@ -10,10 +10,12 @@ export default function () {
 				<Title children="I am Lawrence." />
 				<SubTitle children="Software + Engineering." />
 
-				<Link href="https://github.com/lwakefield" children="GitHub" />,&nbsp;
-				<Link href="https://www.linkedin.com/in/lawrencewak/" children="Linkedin" />,&nbsp;
-				<Link href="https://twitter.com/lawrenceewak" children="Twitter" />,&nbsp;
-				<Link href="mailto:lawrence@iamlawrence.me" children="Email" />
+				<p>
+					<Link href="https://github.com/lwakefield" children="GitHub" />{', '}
+					<Link href="https://www.linkedin.com/in/lawrencewak/" children="Linkedin" />{', '}
+					<Link href="https://twitter.com/lawrenceewak" children="Twitter" />{', '}
+					<Link href="mailto:lawrence@iamlawrence.me" children="Email" />
+				</p>
 
 			</Content>
 		</Container>
@@ -36,11 +38,13 @@ injectGlobal`
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+
+	@media (min-width: 700px) {
+		align-items: center;
+	}
 `;
 
 const Content = styled.div`
-	width: 100%;
 	max-width: 32rem;
 	padding: 1rem;
 `;
@@ -48,6 +52,7 @@ const Content = styled.div`
 const Title = styled.h1`
 	font-size: 2rem;
 	margin: 0;
+	padding: 0;
 	font-weight: normal;
 	line-height: 1.75;
 `;
@@ -55,6 +60,7 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
 	font-size: 2rem;
 	margin: 0;
+	padding: 0;
 	font-weight: normal;
 	line-height: 1.75;
 `;
